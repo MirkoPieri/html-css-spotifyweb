@@ -9,66 +9,74 @@
   </head>
   <body>
     <main>
-      <div class="row">
+      <!-- div generale -->
+      <div id="generale">
+
+        <div id="section_uno" class="row">
+
+          <!-- section colonna sinistra -->
+          <section id="col_dx" class="col-xs-3 hidden-xs hidden-sm">
+            <div class="parte_superiore cont_flex">
+              <a href="#"><img src="immagini/spotifylogo.png" alt="logo spotify" class="img-responsive "> </a>
 
 
-      <!-- section colonna sinistra -->
-      <section class="col-xs-2 col_sinistra">
-        <div class="container_flex">
+                  <a href="#" class="menu_"><span class="glyphicon glyphicon-search" aria-hidden="true"></span>Cerca</a>
+                  <a href="#" class="menu_"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>Home</a>
+                  <a href="#" class="menu_"><span class="glyphicon glyphicon-align-center" aria-hidden="true"></span>La tua libreria</a>
 
-          <a href="https://open.spotify.com/browse/featured"><img src="immagini/spotifylogo.png" alt="logo spotify" class="img-responsive"></a>
+                  <h5>ascoltati di recente</h5>
+                  <p>artisti</p>
+                  <a href="#" class="menu_list">Bad Bunny</a>
+                  <p>playlist</p>
+                  <a href="#" class="menu_list">Personale</a>
 
-          <div class="menu_flex nav_princ">
-            <a href="#"><span class="glyphicon glyphicon-search" aria-hidden="true"></span>Cerca</a>
-            <a href="#"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>Home</a>
-            <a href="#"><span class="glyphicon glyphicon-align-center" aria-hidden="true"></span>La tua libreria</a>
-          </div>
+            </div>
 
-          <div class="menu_flex nav_secondaria">
-            <p>ascoltati di recente</p>
-            <p>artista</p>
-            <a href="#">Drapht</a>
-            <p>playlist</p>
-            <a href="#">Uno</a>
-          </div>
 
-          <!-- parte inferiore -->
-          <div class="menu_flexend nav_secondaria">
-            <a href="#" class="item"><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>Installa App</a>
-            <a href="#" class="item"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>User.872344</a>
-          </div>
+
+            <div class="parte_inferiore cont_flex hidden-xs hidden-sm">
+              <a href="#" class="menu_"><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>Install app</a>
+              <a href="#" class="menu_"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>user.3345465</a>
+            </div>
+          </section>
+
+          <!-- responsive mobile -->
+          <section id="col_dx" class="col-xs-3 hidden-md hidden-lg">
+            <div class="parte_superiore cont_flex">
+              <a href="#"><img src="immagini/icona.png" alt="logo spotify" class="img-responsive "> </a>
+
+
+                  <a href="#" class="menu_"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></a>
+                  <a href="#" class="menu_"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a>
+                  <a href="#" class="menu_"><span class="glyphicon glyphicon-align-center" aria-hidden="true"></span></a>
+
+            </div>
+
+
+
+            <div class="parte_inferiore cont_flex hidden-mg hidden-lg">
+              <a href="#" class="menu_"><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span></a>
+              <a href="#" class="menu_"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a>
+            </div>
+          </section>
+
+
+          <!-- section colonna destra -->
+          <section id="col_sx" class="col-xs-9">
+            <nav>
+            </nav>
+          </section>
 
         </div>
-      </section>
 
+      <div id="section_due" class="row">
+      <div class="col-xs-12">
 
-      <!-- section colonna destra -->
-      <section class="col-xs-10 general_dx">
-
-        <nav class="flex_navbar">
-          <a href="#">in evidenza</a>
-          <a href="#">podcast</a>
-          <a href="#">classifiche</a>
-          <a href="#">generi e mood</a>
-          <a href="#">nuove uscite</a>
-          <a href="#">scopri</a>
-        </nav>
-
-        <section class="music_selector">
-          <h2>Buona giornata con le nostre Playlist</h2>
-          <div class="Bflex_music">
-
-          </div>
-
-        </section>
-
-      </section>
-
+        <!-- barra lettore musicale -->
+      </div>
+    </div>
 
       </div>
-
-
-      <!-- barra lettore musicale -->
     </main>
 
   </body>
