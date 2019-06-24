@@ -4,13 +4,17 @@
 
 .col_sinistra {
   background: black;
+  height: 800px;
+  overflow-y: hidden;
+}
+
+.col_sinistra * {
+  padding: 0 15px;
 }
 
 .container_flex {
   display: flex;
   flex-direction: column;
-  width: 80%;
-  margin: 0 auto;
 }
 
 .col_sinistra a img {
@@ -30,6 +34,22 @@
   font-weight: bold;
   font-size: 15pt;
   padding: 10px 0;
+  filter: opacity(60%);
+}
+
+.nav_princ a:hover {
+  filter: opacity(85%);
+  text-decoration: none;
+}
+
+.nav_princ a:hover {
+  filter: opacity(85%);
+  text-decoration: none;
+}
+.nav_princ a:focus {
+  filter: opacity(100%);
+  text-decoration: none;
+  border-left: 5px solid green;
 }
 
 .nav_princ span {
@@ -37,24 +57,32 @@
 }
 
 .nav_secondaria p {
-  color: lightgray;
+  color: white;
+  filter: opacity(80%);
   font-size: 11pt;
   text-transform: uppercase;
+  padding: 5px 0;
 }
 
 .nav_secondaria a {
-  color: lightgray;
+  color: gray;
   font-size: 11pt;
   padding: 10px 0;
   font-weight: bold;
+  text-decoration: none;
+}
+
+.nav_secondaria a:hover {
+  color: white;
+  text-decoration: none;
 }
 
 /* parte inferiore */
 .menu_flexend {
+  height: 150px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  margin-top: 100px;
 }
 
 .menu_flexend span {
@@ -63,4 +91,35 @@
 
 .menu_flexend a:first-child  {
   border-bottom: 2px solid lightgray;
+}
+
+/* colonna destra */
+.general_dx {
+  background-image: linear-gradient(to bottom right, #2B6032, #060E07);
+}
+
+.flex_navbar {
+  width: 60%;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.flex_navbar a {
+  text-transform: uppercase;
+  color: white;
+  filter: opacity(60%);
+  font-weight: bold;
+}
+
+.general_dx .music_selector {
+   width: 85%;
+   margin: 70px auto;
+
+}
+
+.general_dx .music_selector h2 {
+  color: white;
+  font-weight: bold;
 }
