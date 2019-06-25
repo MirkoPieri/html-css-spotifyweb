@@ -1,8 +1,5 @@
-/* definizioni generali */
-main {
-  overflow-x: hidden;
-}
 
+/* definizioni generali */
 .float_left {
   float: left;
 }
@@ -14,6 +11,8 @@ main {
 #section_uno {
   width: 100%;
   height: calc(100% - 100px);
+  margin: 0;
+  padding: 0;
 }
 
 #section_due {
@@ -23,35 +22,33 @@ main {
 }
 
 #col_dx {
-  width: 20%;
+  width: 15%;
   height: 100%;
   background: black;
-  padding: 50px;
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 #col_sx {
-  width: calc(100% - 20%);
+  width: calc(100% - 15%);
   height: 100%;
-  background-image: linear-gradient(to bottom right, #2B6032, #060E07);
+  background-image: linear-gradient(to bottom right, #374A56, #060709);
+  overflow-y: auto;
 }
 
 /* navigazione destra */
-.parte_superiore {
-  height: 90%;
-}
-
-.parte_inferiore {
-  height: 10%;
-}
 
 /* parte superiore */
 .cont_flex {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .parte_superiore a img {
-  height: 50px;
+  height: 40px;
   width: auto;
   margin-bottom: 50px;
 }
@@ -61,7 +58,8 @@ main {
   filter: opacity(60%);
   padding: 10px 0;
   font-weight: bold;
-  font-size: 15pt;
+  font-size: 11pt;
+  text-align: center;
 }
 
 .menu_ span {
@@ -81,25 +79,28 @@ main {
   border-left: 4px solid green;
 }
 
-.parte_superiore h5 {
+.parte_centrale h5 {
   color: grey;
-  padding-top: 80px;
   text-transform: uppercase;
-  font-size: 12pt;
+  font-size: 10pt;
+  font-weight: bold;
+  text-align: center;
 }
 
-.parte_superiore p {
+.parte_centrale p {
   color: grey;
-  font-size: 10pt;
+  font-size: 8pt;
   font-weight: bold;
   padding-top: 20px;
   text-transform: uppercase;
+  text-align: center;
 }
 
-.menu_list {
+.parte_centrale .menu_list {
   color: grey;
-  font-size: 10pt;
+  font-size: 9pt;
   font-weight: bold;
+  text-align: center;
 }
 
 .menu_list:hover {
@@ -111,6 +112,90 @@ main {
   border-bottom: 1px gray solid;
 }
 
+.impagin_navinf {
+  padding-left: 0;
+}
+
 .parte_inferiore a {
   color: gray;
+}
+
+/* responsive */
+.impagina_responsive {
+  padding-left: 0;
+}
+
+
+
+/* parte destra */
+
+/* nav */
+.nav_dx {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.music_cont {
+  width: 75%;
+  margin: 0 auto;
+  padding-bottom: 80px;
+}
+
+.nav_flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.nav_flex li a {
+  color: white;
+ filter: opacity(65%);
+ text-transform: uppercase;
+ font-weight: bold;
+}
+
+.nav_flex li a:hover {
+  color: white;
+  filter: opacity(85%);
+  text-decoration: none;
+}
+
+.nav_flex li a:focus {
+  filter: opacity(100%);
+  text-decoration: none;
+}
+
+.nav_flex li  {
+  list-style: none;
+  padding-top: 30px;
+}
+
+
+/* scelta musica */
+.music_flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.music_cont h2 {
+  color: white;
+  padding: 30px 0;
+  font-weight: bold;
+}
+
+.music_flex a img {
+  height: 200px;
+  width: auto;
+  margin: 50px 0;
+}
+
+.music_flex a {
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
 }

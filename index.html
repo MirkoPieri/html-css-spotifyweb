@@ -12,25 +12,27 @@
       <!-- div generale -->
       <div id="generale">
 
-        <div id="section_uno" class="row">
+        <div id="section_uno">
 
           <!-- section colonna sinistra -->
-          <section id="col_dx" class="col-xs-3 hidden-xs hidden-sm">
+          <section id="col_dx" class="hidden-xs hidden-sm float_left">
             <div class="parte_superiore cont_flex">
-              <a href="#"><img src="immagini/spotifylogo.png" alt="logo spotify" class="img-responsive "> </a>
+              <a href="#"><img src="immagini/spotifylogo.png" alt="logo spotify" class="img-responsive center-block"> </a>
 
 
                   <a href="#" class="menu_"><span class="glyphicon glyphicon-search" aria-hidden="true"></span>Cerca</a>
                   <a href="#" class="menu_"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>Home</a>
                   <a href="#" class="menu_"><span class="glyphicon glyphicon-align-center" aria-hidden="true"></span>La tua libreria</a>
+            </div>
 
+            <div class="parte_centrale cont_flex">
                   <h5>ascoltati di recente</h5>
                   <p>artisti</p>
                   <a href="#" class="menu_list">Bad Bunny</a>
                   <p>playlist</p>
                   <a href="#" class="menu_list">Personale</a>
-
             </div>
+
 
 
 
@@ -40,40 +42,81 @@
             </div>
           </section>
 
+
           <!-- responsive mobile -->
-          <section id="col_dx" class="col-xs-3 hidden-md hidden-lg">
+          <section id="col_dx" class="hidden-md hidden-lg float_left">
             <div class="parte_superiore cont_flex">
-              <a href="#"><img src="immagini/icona.png" alt="logo spotify" class="img-responsive "> </a>
+              <a href="#"><img src="immagini/icona.png" alt="logo spotify" class="img-responsive center-block"> </a>
 
 
-                  <a href="#" class="menu_"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></a>
-                  <a href="#" class="menu_"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a>
-                  <a href="#" class="menu_"><span class="glyphicon glyphicon-align-center" aria-hidden="true"></span></a>
+                  <a href="#" class="menu_ impagina_responsive"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></a>
+                  <a href="#" class="menu_ impagina_responsive"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a>
+                  <a href="#" class="menu_ impagina_responsive"><span class="glyphicon glyphicon-align-center" aria-hidden="true"></span></a>
 
             </div>
 
 
 
             <div class="parte_inferiore cont_flex hidden-mg hidden-lg">
-              <a href="#" class="menu_"><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span></a>
-              <a href="#" class="menu_"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a>
+              <a href="#" class="menu_ impagina_responsive"><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span></a>
+              <a href="#" class="menu_ impagina_responsive"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a>
             </div>
           </section>
 
 
           <!-- section colonna destra -->
-          <section id="col_sx" class="col-xs-9">
-            <nav>
+          <section id="col_sx" class="float_left">
+            <nav class="nav_dx">
+              <ul class="nav_flex">
+                <li><a href="#">in evidenza</a></li>
+                <li><a href="#">podcast</a></li>
+                <li><a href="#">classifiche</a></li>
+                <li><a href="#">generi e mood</a></li>
+                <li><a href="#">nuove uscite</a></li>
+                <li><a href="#">scopri</a></li>
+              </ul>
             </nav>
+
+            <div class="music_cont">
+              <h2>I nostri artisti per il tuo mattino...</h2>
+              <div class="music_flex">
+                <a href="#"><img src="immagini/bud.jpg" alt="bad bunny" class="img-circle img-responsive">Bad Bunny</a>
+                <a href="#"><img src="immagini/axel.jpg" alt="axel" class="img-circle img-responsive">Axel</a>
+                <a href="#"><img src="immagini/drapht.jpg" alt="drapht" class="img-circle img-responsive">Drapht</a>
+                <a href="#"><img src="immagini/jade.jpg" alt="jade" class="img-circle img-responsive">Jade</a>
+                <a href="#"><img src="immagini/dynoro.jpg" alt="dynoro" class="img-circle img-responsive">Dynoro</a>
+                <a href="#"><img src="immagini/lewis.jpg" alt="lewis" class="img-circle img-responsive">Lewis</a>
+              </div>
+            </div>
+
+            <div class="music_cont">
+              <h2>Classifiche</h2>
+                <div class="music_flex">
+                  <a href="#"><img src="immagini/italy.jpg" alt="top italy" class="img-responsive">Top 50 - Italia</a>
+                  <a href="#"><img src="immagini/global.jpg" alt="top global" class="img-responsive">Top 50 - Globale</a>
+                  <a href="#"><img src="immagini/viral.jpg" alt="viral global" class="img-responsive">Viral 50 - Globale</a>
+                  <a href="#"><img src="immagini/viralitaly.jpg" alt="viral italy" class="img-responsive">Viral 50 - Italia</a>
+              </div>
+            </div>
+            <div class="music_cont">
+              <h2>Le nostre Playlist per il tuo mattino...</h2>
+              <div class="music_flex">
+                <a href="#"><img src="immagini/cofee.jpg" alt="cofee" class="img-responsive">Wake Up and Smell to Cofee</a>
+                <a href="#"><img src="immagini/estate.png" alt="hit estate 2019" class="img-responsive">Le Hit dell'estate 2019</a>
+                <a href="#"><img src="immagini/hippop.jpg" alt="Hip Pop" class="img-responsive">Hip Pop</a>
+                <a href="#"><img src="immagini/hititalia.jpg" alt="Hit Italiane" class="img-responsive">Hit Italiane</a>
+                <a href="#"><img src="immagini/pop.jpg" alt="Pop Rotation" class="img-responsive">Pop Rotation</a>
+              </div>
+            </div>
           </section>
 
         </div>
 
-      <div id="section_due" class="row">
-      <div class="col-xs-12">
+      <div id="section_due">
+
 
         <!-- barra lettore musicale -->
-      </div>
+
     </div>
 
       </div>
