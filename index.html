@@ -38,7 +38,11 @@
 
             <div class="parte_inferiore cont_flex hidden-xs hidden-sm">
               <a href="#" class="menu_"><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>Install app</a>
-              <a href="#" class="menu_"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>user.3345465</a>
+              <span class="glyphicon glyphicon-user menu_" aria-hidden="true">  <a href="#" id="java"></a></span>
+
+              <script type="text/javascript">
+                document.getElementById('java').innerHTML="user.3345465";
+              </script>
             </div>
           </section>
 
@@ -65,62 +69,86 @@
 
 
           <!-- section colonna destra -->
-          <section id="col_sx" class="float_left">
-            <nav class="nav_dx">
-              <ul class="nav_flex">
-                <li><a href="#">in evidenza</a></li>
-                <li><a href="#">podcast</a></li>
-                <li><a href="#">classifiche</a></li>
-                <li><a href="#">generi e mood</a></li>
-                <li><a href="#">nuove uscite</a></li>
-                <li><a href="#">scopri</a></li>
-              </ul>
-            </nav>
+            <section id="col_sx" class="float_left">
+              <nav class="nav_dx  hidden-xs hidden-sm">
+                <ul class="nav_flex">
+                  <li><a href="#">in evidenza</a></li>
+                  <li><a href="#">podcast</a></li>
+                  <li><a href="#">classifiche</a></li>
+                  <li><a href="#">generi e mood</a></li>
+                  <li><a href="#">nuove uscite</a></li>
+                  <li><a href="#">scopri</a></li>
+                </ul>
+              </nav>
 
-            <div class="music_cont">
-              <h2>I nostri artisti per il tuo mattino...</h2>
-              <div class="music_flex">
-                <a href="#"><img src="immagini/bud.jpg" alt="bad bunny" class="img-circle img-responsive">Bad Bunny</a>
-                <a href="#"><img src="immagini/axel.jpg" alt="axel" class="img-circle img-responsive">Axel</a>
-                <a href="#"><img src="immagini/drapht.jpg" alt="drapht" class="img-circle img-responsive">Drapht</a>
-                <a href="#"><img src="immagini/jade.jpg" alt="jade" class="img-circle img-responsive">Jade</a>
-                <a href="#"><img src="immagini/dynoro.jpg" alt="dynoro" class="img-circle img-responsive">Dynoro</a>
-                <a href="#"><img src="immagini/lewis.jpg" alt="lewis" class="img-circle img-responsive">Lewis</a>
-              </div>
-            </div>
-
-            <div class="music_cont">
-              <h2>Classifiche</h2>
+              <div class="flex_column">
+              <div class="music_cont">
+                <h2>I nostri artisti per il tuo mattino...</h2>
                 <div class="music_flex">
-                  <a href="#"><img src="immagini/italy.jpg" alt="top italy" class="img-responsive">Top 50 - Italia</a>
-                  <a href="#"><img src="immagini/global.jpg" alt="top global" class="img-responsive">Top 50 - Globale</a>
-                  <a href="#"><img src="immagini/viral.jpg" alt="viral global" class="img-responsive">Viral 50 - Globale</a>
-                  <a href="#"><img src="immagini/viralitaly.jpg" alt="viral italy" class="img-responsive">Viral 50 - Italia</a>
+                  <a href="#"><img src="immagini/bud.jpg" alt="bad bunny" class="img-circle img-responsive">Bad Bunny</a>
+                  <a href="#"><img src="immagini/axel.jpg" alt="axel" class="img-circle img-responsive">Axel</a>
+                  <a href="#"><img src="immagini/drapht.jpg" alt="drapht" class="img-circle img-responsive">Drapht</a>
+                  <a href="#"><img src="immagini/jade.jpg" alt="jade" class="img-circle img-responsive">Jade</a>
+                  <a href="#"><img src="immagini/dynoro.jpg" alt="dynoro" class="img-circle img-responsive">Dynoro</a>
+                  <a href="#"><img src="immagini/lewis.jpg" alt="lewis" class="img-circle img-responsive">Lewis</a>
+                </div>
               </div>
-            </div>
-            <div class="music_cont">
-              <h2>Le nostre Playlist per il tuo mattino...</h2>
-              <div class="music_flex">
-                <a href="#"><img src="immagini/cofee.jpg" alt="cofee" class="img-responsive">Wake Up and Smell to Cofee</a>
-                <a href="#"><img src="immagini/estate.png" alt="hit estate 2019" class="img-responsive">Le Hit dell'estate 2019</a>
-                <a href="#"><img src="immagini/hippop.jpg" alt="Hip Pop" class="img-responsive">Hip Pop</a>
-                <a href="#"><img src="immagini/hititalia.jpg" alt="Hit Italiane" class="img-responsive">Hit Italiane</a>
-                <a href="#"><img src="immagini/pop.jpg" alt="Pop Rotation" class="img-responsive">Pop Rotation</a>
+
+              <div class="music_cont">
+                <h2>Classifiche</h2>
+                  <div class="music_flex">
+                    <a href="#"><img src="immagini/italy.jpg" alt="top italy" class="img-responsive">Top 50 - Italia</a>
+                    <a href="#"><img src="immagini/global.jpg" alt="top global" class="img-responsive">Top 50 - Globale</a>
+                    <a href="#"><img src="immagini/viral.jpg" alt="viral global" class="img-responsive">Viral 50 - Globale</a>
+                    <a href="#"><img src="immagini/viralitaly.jpg" alt="viral italy" class="img-responsive">Viral 50 - Italia</a>
+                </div>
+              </div>
+
+              <div class="music_cont">
+                <h2>Le nostre Playlist per il tuo mattino...</h2>
+                <div class="music_flex">
+                  <a href="#"><img src="immagini/cofee.jpg" alt="cofee" class="img-responsive">Wake Up and Smell to Cofee</a>
+                  <a href="#"><img src="immagini/estate.png" alt="hit estate 2019" class="img-responsive">Le Hit dell'estate 2019</a>
+                  <a href="#"><img src="immagini/hippop.jpg" alt="Hip Pop" class="img-responsive">Hip Pop</a>
+                  <a href="#"><img src="immagini/hititalia.jpg" alt="Hit Italiane" class="img-responsive">Hit Italiane</a>
+                  <a href="#"><img src="immagini/pop.jpg" alt="Pop Rotation" class="img-responsive">Pop Rotation</a>
+                </div>
               </div>
             </div>
           </section>
 
         </div>
 
-      <div id="section_due">
+        <div id="section_due">
+
+          <div class="music_sx">
+            <img src="immagini/dynoro.jpg" alt="dynoro" class="img-responsive" id="music_play">
+           </div>
+
+          <div class="music_cent">
 
 
-        <!-- barra lettore musicale -->
+          </div>
 
-    </div>
+          <div class="music_dx">
+            <div class="hidden-xs hidden-sm">
+              <input type="range" min="0" max="100" value="50" class="orizont_range" id="myRange">
+              <p>Value: <span id="demo"></span></p>
+            </div>
 
+            <script>
+                  var slider = document.getElementById("myRange");
+                  var output = document.getElementById("demo");
+                  output.innerHTML = slider.value;
+
+                  slider.oninput = function() {
+                    output.innerHTML = this.value;
+                  }
+            </script>
+
+          </div>
+        </div>
       </div>
     </main>
-
   </body>
 </html>
